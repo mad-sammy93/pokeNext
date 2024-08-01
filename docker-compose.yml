@@ -1,0 +1,14 @@
+# version: '3.5'
+
+services:
+  poke:
+    # image: poke
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: poke
+    ports:
+      - '8637:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
