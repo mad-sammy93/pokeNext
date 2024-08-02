@@ -1,3 +1,12 @@
+"use client"
+
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 export default function Home() {
-  return <main>Mian page</main>;
+  const name= "John"
+  return <div>
+    <Header name={name}/>
+    Main landing page
+    <Footer />
+  </div>;
 }
